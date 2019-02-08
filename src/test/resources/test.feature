@@ -1,5 +1,7 @@
-Feature: Dashboard access 
+Feature: Query URL 
+
+@dashboard-access
 Scenario: To check if kubernetes dashboard is installed after application is deployed
-Given go To Kubernetes dashboard
-When check webelement access
+Given download WebService Response In LocalFile
+When get String From WebService
 Then validate result
